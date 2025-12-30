@@ -114,11 +114,3 @@ curl http://localhost:8000/api/verify -I
 - Utilisez HTTPS en production et protégez les tokens (HttpOnly cookies si possible).
 - Validez et sanitizez toutes les entrées côté serveur.
 
-
-
----
-
-Si vous voulez, je peux :
-- ajouter des exemples de `curl` pour chaque endpoint,
-- automatiser le lancement (script `run.sh` / `run.ps1`),
-- ou commiter ces changements pour vous.
