@@ -114,13 +114,7 @@ curl http://localhost:8000/api/verify -I
 - Utilisez HTTPS en production et protégez les tokens (HttpOnly cookies si possible).
 - Validez et sanitizez toutes les entrées côté serveur.
 
-## Contribution
 
-Contributions bienvenues : ouvrez une issue ou un pull request en expliquant la fonctionnalité ou le bug.
-
-## Licence
-
-Ce projet est fourni à titre d'exemple. Ajoutez un fichier `LICENSE` si vous souhaitez préciser les conditions d'utilisation.
 
 ---
 
