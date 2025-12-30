@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth System - Authentification Sécurisée</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-layout">
+    <div class="home-container">
+        <div class="home-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">🔐 Système d'Authentification</h1>
+                <p class="hero-subtitle">
+                    Une solution complète d'authentification développée avec Python pur et JavaScript vanilla.
+                    Sécurisé, moderne et performant.
+                </p>
+                
+                <div id="alert" class="alert hidden"></div>
+                
+                <div class="guest-only">
+                    <div style="display: flex; gap: 15px; justify-content: center; margin-bottom: 40px;">
+                        <a href="login.html" class="btn" style="padding: 15px 30px; font-size: 1.1rem;">
+                            🚀 Se Connecter
+                        </a>
+                        <a href="register.html" class="btn btn-secondary" style="padding: 15px 30px; font-size: 1.1rem;">
+                            📝 Créer un Compte
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="auth-only hidden">
+                    <div style="background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: var(--border-radius); backdrop-filter: blur(10px);">
+                        <h2 style="margin-bottom: 20px; font-size: 1.8rem;">✅ Vous êtes connecté !</h2>
+                        <div style="display: flex; gap: 20px; justify-content: center;">
+                            <a href="dashboard.html" class="btn" style="padding: 12px 24px;">
+                                📊 Accéder au Dashboard
+                            </a>
+                            <button id="logoutBtn" class="btn btn-secondary" style="padding: 12px 24px;">
+                                🚪 Se Déconnecter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Sécurité Maximale</h3>
+                        <p>Hash bcrypt, tokens JWT, validation des entrées et protection contre les attaques.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Performance</h3>
+                        <p>Développé sans framework pour des performances optimales et un contrôle total.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">👥</div>
+                        <h3>Gestion des Rôles</h3>
+                        <p>Système complet de gestion des permissions utilisateur/administrateur.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <div class="feature-icon">🎨</div>
+                        <h3>Design Moderne</h3>
+                        <p>Interface responsive et intuitive avec une expérience utilisateur optimale.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>© 2024 Auth System - Développé avec Python & JavaScript vanilla</p>
+            <p style="margin-top: 10px; opacity: 0.8;">
+                Projet GitHub pour alternance en développement informatique
+            </p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

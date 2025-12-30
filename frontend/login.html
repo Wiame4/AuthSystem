@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Auth System</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>🔐 Connexion</h1>
+            <p>Connectez-vous à votre compte pour accéder au système.</p>
+            <div class="mt-4">
+                <p>👨‍💻 Compte de test Admin:</p>
+                <p><strong>Username:</strong> admin</p>
+                <p><strong>Password:</strong> admin123</p>
+            </div>
+            <a href="index.html" class="btn btn-secondary mt-4" data-page="index">← Retour à l'accueil</a>
+        </div>
+        
+        <div class="content">
+            <div class="auth-container">
+                <h2>Connexion</h2>
+                <p class="subtitle">Entrez vos identifiants</p>
+                
+                <div id="alert" class="alert hidden"></div>
+                
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Nom d'utilisateur</label>
+                        <input type="text" id="username" name="username" required placeholder="Entrez votre nom d'utilisateur">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Mot de passe</label>
+                        <input type="password" id="password" name="password" required placeholder="Entrez votre mot de passe">
+                    </div>
+                    
+                    <button type="submit" class="btn">Se connecter</button>
+                </form>
+                
+                <div class="mt-4 text-center">
+                    <p>Pas encore de compte ? <a href="register.html" data-page="register">S'inscrire</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - Auth System</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>📝 Inscription</h1>
+            <p>Créez votre compte pour accéder au système.</p>
+            <div class="mt-4">
+                <p>🔒 Sécurité garantie :</p>
+                <p>• Mots de passe hashés</p>
+                <p>• Tokens sécurisés</p>
+                <p>• Validation des entrées</p>
+            </div>
+            <a href="index.html" class="btn btn-secondary mt-4" data-page="index">← Retour à l'accueil</a>
+        </div>
+        
+        <div class="content">
+            <div class="auth-container">
+                <h2>Créer un compte</h2>
+                <p class="subtitle">Remplissez le formulaire d'inscription</p>
+                
+                <div id="alert" class="alert hidden"></div>
+                
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="username">Nom d'utilisateur *</label>
+                        <input type="text" id="username" name="username" required 
+                               placeholder="3-20 caractères (lettres, chiffres, _)">
+                        <small style="color: var(--gray-color); font-size: 0.9rem;">
+                            Lettres, chiffres et underscores uniquement
+                        </small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required 
+                               placeholder="votre@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Mot de passe *</label>
+                        <input type="password" id="password" name="password" required 
+                               placeholder="Minimum 8 caractères">
+                        <small style="color: var(--gray-color); font-size: 0.9rem;">
+                            Minimum 8 caractères, avec majuscule, minuscule et chiffre
+                        </small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="role">Rôle</label>
+                        <select id="role" name="role">
+                            <option value="user">Utilisateur</option>
+                            <option value="admin">Administrateur</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn">S'inscrire</button>
+                </form>
+                
+                <div class="mt-4 text-center">
+                    <p>Déjà un compte ? <a href="login.html" data-page="login">Se connecter</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
